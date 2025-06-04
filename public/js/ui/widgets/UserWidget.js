@@ -26,3 +26,19 @@ class UserWidget {
 
   }
 }
+
+class UserWidget {
+  constructor(element) {
+    if (!element) {
+      throw new Error('Element not found');
+    }
+    this.element = element;
+  }
+  
+  update() {
+    const user = User.current();
+    if (user) {
+      this.element.querySelector('.user-name').textContent = user.name;
+    }
+  }
+}

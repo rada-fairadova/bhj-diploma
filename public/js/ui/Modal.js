@@ -48,20 +48,13 @@ class Modal {
 
 class Modal {
   constructor(element) {
-    if (!element) {
-      throw new Error('Element not found');
-    }
+    if (!element) throw new Error('Element not found');
     this.element = element;
     this.registerEvents();
   }
   
-  open() {
-    this.element.style.display = 'block';
-  }
-  
-  close() {
-    this.element.style.display = 'none';
-  }
+  open() { this.element.style.display = 'block'; }
+  close() { this.element.style.display = 'none'; }
   
   onClose(e) {
     e.preventDefault();

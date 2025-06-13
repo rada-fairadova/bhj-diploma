@@ -30,6 +30,7 @@ class Entity {
   }
 }
 
+// public/js/api/Entity.js
 class Entity {
   static URL = '';
   

@@ -50,9 +50,7 @@ class AsyncForm {
 
 class AsyncForm {
   constructor(element) {
-    if (!element) {
-      throw new Error('Element not found');
-    }
+    if (!element) throw new Error('Element not found');
     this.element = element;
     this.registerEvents();
   }
